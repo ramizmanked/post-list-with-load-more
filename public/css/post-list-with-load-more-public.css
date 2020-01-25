@@ -1,0 +1,50 @@
+#custom-post-form button,
+#custom-post-form #load-more-image {
+    margin: 1em 0;
+}
+.custom-post-list .custom-post {
+    margin-bottom: 2em;
+}
+.custom-post-list.style_list .custom-post, .custom-post-list.style_grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.custom-post-list.style_list .custom-post .custom-post-image {
+    width: 25%;
+}
+.custom-post-list.style_list .custom-post .custom-post-con {
+    width: 75%;
+    padding-left: 1.5em;
+}
+#custom-post-form #load-more-image {
+    margin: 2em 0 0 2.5em;
+}
+.custom-post-list.style_list .custom-post .custom-post-title {
+    margin: 0 0 0.5em;
+}
+body .custom-posts-wrapper{
+    max-width: 100% !important;
+}
+.custom-post-list.style_grid .custom-post {
+    width: 33.33%;
+    padding-right: 1em;
+}
+.custom-post-list.style_grid .custom-post .custom-post-image > img {
+    max-height: 245px;
+}
+#custom-post-form.style_grid{
+    text-align: center;
+}
+#custom-post-form.style_grid button{
+    margin: auto;
+}
+#custom-post-form.more_on_scroll button {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+#custom-post-form.style_grid #load-more-image {
+    margin: 1em auto 0;
+}
