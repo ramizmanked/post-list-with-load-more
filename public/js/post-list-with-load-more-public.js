@@ -44,8 +44,8 @@
 					e.preventDefault();
 					$( '#load-more-image' ).css( 'display', 'block' );
 					$( this ).css( 'display', 'none' );
-					const page  = $( this ).data( 'page' );
-					const limit = $( this ).data( 'limit' );
+					const page  = $( this ).attr( 'data-page' );
+					const limit = $( this ).attr( 'data-limit' );
 					const args  = $( '#post-args' ).val();
 					$.ajax(
 						{
@@ -64,13 +64,12 @@
 							},
 							success: function ( response ) {
 								$( '.custom-post-list' ).append( response );
-								$( '#custom-post-form button' ).data( 'page', page + 1 );
 								if ( response.indexOf( 'remove-view-more' ) > -1 ) {
 									$( '#custom-post-form' ).remove();
 									$( '#load-more-image' ).css( 'display', 'none' );
 								} else {
 									$( '#load-more-image' ).css( 'display', 'none' );
-									$( '#custom-post-form button' ).css( 'display', 'block' );
+									$( '#custom-post-form button' ).css( 'display', 'block' ).attr( 'data-page', parseInt( page ) + 1 );
 								}
 								/*alert(response)*/
 							}

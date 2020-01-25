@@ -96,7 +96,7 @@ class Post_List_With_Load_More_Public {
 				array(
 					'taxonomy'         => $taxonomy,
 					'field'            => 'slug',
-					'terms'            => $terms,
+					'terms'            => $terms, // Where term_id of Term 1 is "1".
 					'include_children' => false,
 				),
 			),
@@ -132,7 +132,7 @@ class Post_List_With_Load_More_Public {
 									$word_limit   = 40;
 									if ( str_word_count( $blog_content ) > $word_limit ) {
 										$blog_content  = '<p>' . strip_shortcodes( wp_trim_words( $blog_content, $word_limit, '[...]' ) ) . '</p>';
-										$blog_content .= '<div class="post-read-more"><a href="' . get_the_permalink( $id ) . '">Load More</a></div>';
+										$blog_content .= '<div class="post-read-more"><a href="' . get_the_permalink( $id ) . '">Read More</a></div>';
 									}
 									$allowed_html = array(
 										'p'   => array(
@@ -157,7 +157,7 @@ class Post_List_With_Load_More_Public {
 				</div>
 				<form class="custom-post-form <?php echo esc_attr( $additional_classes ); ?>" id="custom-post-form">
 					<input id="post-args" type="hidden" value="<?php echo esc_attr( str_replace( '"', '\'', wp_json_encode( $args ) ) ); ?>" />
-					<button data-page="1" data-limit="<?php echo esc_attr( $limit ); ?>">View More</button>
+					<button data-page="1" data-limit="<?php echo esc_attr( $limit ); ?>">Load More</button>
 					<img style="display: none" id="load-more-image" height="35" width="35" src="<?php echo esc_url( plugin_dir_url( __FILE__ ) . 'images/loading.svg' ); ?>" alt="Loading" />
 				</form>
 				<?php
@@ -182,9 +182,11 @@ class Post_List_With_Load_More_Public {
 			$data      = $_POST;
 			$post_html = null;
 			if ( ! empty( $data['args'] ) ) {
-				$args         = json_decode( str_replace( "\'", '"', $data['args'] ) );
-				$args->offset = $data['page'] * $data['limit'];
-				$blogs        = get_posts( $args );
+				$args           = str_replace( "\'", '"', $data['args'] );
+				$args           = json_decode( $args, true );
+				$args['offset'] = $data['page'] * $data['limit'];
+
+				$blogs = get_posts( $args );
 				if ( count( $blogs ) > 0 ) {
 					foreach ( $blogs as $blog ) {
 						$id            = $blog->ID;
