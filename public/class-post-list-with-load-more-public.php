@@ -182,9 +182,9 @@ class Post_List_With_Load_More_Public {
 			$data      = $_POST;
 			$post_html = null;
 			if ( ! empty( $data['args'] ) ) {
-				$args           = str_replace( "\'", '"', $data['args'] );
+				$args           = str_replace( "\'", '"', sanitize_text_field( $data['args'] ) );
 				$args           = json_decode( $args, true );
-				$args['offset'] = $data['page'] * $data['limit'];
+				$args['offset'] = sanitize_text_field( $data['page'] ) * sanitize_text_field( $data['limit'] );
 
 				$blogs = get_posts( $args );
 				if ( count( $blogs ) > 0 ) {
@@ -213,36 +213,14 @@ class Post_List_With_Load_More_Public {
                     </div>
                 </div>';
 					}
-					if ( count( $blogs ) < $data['limit'] ) {
+					if ( count( $blogs ) < sanitize_text_field( $data['limit'] ) ) {
 						echo '<span style="display: none">remove-view-more</span>';
 					}
 				} else {
 					echo '<span style="display: none">remove-view-more</span>';
 				}
 			}
-			$allowed_html = array(
-				'h4'  => array(
-					'class' => array(),
-				),
-				'p'   => array(
-					'class' => array(),
-				),
-				'div' => array(
-					'class' => array(),
-				),
-				'a'   => array(
-					'class' => array(),
-					'href'  => array(),
-				),
-				'img' => array(
-					'width'  => array(),
-					'height' => array(),
-					'class'  => array(),
-					'src'    => array(),
-					'alt'    => array(),
-				),
-			);
-			echo wp_kses( $post_html, $allowed_html );
+			echo wp_kses_post( $post_html );
 			exit;
 		}
 		exit;

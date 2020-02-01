@@ -3,13 +3,13 @@
 Contributors: ramizmanked
 Tags: post list with load more, lazy loading posts, ajax posts, posts with load more, load more posts, infinite posts, post list, post with read more
 Requires at least: 4.5.0
-Tested up to: 5.3
+Tested up to: 5.3.2
 Stable tag: 1.0.0
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simplified solution to your posts listing needs.
+A simplified solution to your posts listing requirements.
 
 == Description ==
 
@@ -80,7 +80,6 @@ You can always add snippet like `<?php echo do_shortcode('[post_list_with_load_m
 2. Admin - Generate a dynamic shortcode.
 3. Post List with List Layout.
 4. Post List with Grid Layout
-5. Post List with Load More button.
 
 == Changelog ==
 
@@ -90,4 +89,4 @@ You can always add snippet like `<?php echo do_shortcode('[post_list_with_load_m
 
 == Upgrade Notice ==
 
-Upgrade notices describe the reason a user should upgrade.
+Plugin security improved.
