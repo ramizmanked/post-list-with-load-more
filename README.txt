@@ -6,7 +6,7 @@ Tags:              post list with load more, lazy loading posts, ajax posts, pos
 Requires at least: 4.5.0
 Tested up to:      6.1.1
 Requires PHP:      8.0
-License:           GPLv2 or later
+License:           GPLv3
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
 A simplified solution to your posts listing requirements.
@@ -101,3 +101,4 @@ You can always add snippet like `<?php echo do_shortcode('[post_list_with_load_m
 
 = 1.0.5 - December 16, 2022 =
 * Fix – Load more functionality broken with recent WordPress release.
+* Fix – minor phpcs warnings.
