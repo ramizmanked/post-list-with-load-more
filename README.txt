@@ -101,3 +101,4 @@ You can always add snippet like `<?php echo do_shortcode('[post_list_with_load_m
 
 = 1.0.5 - December 16, 2022 =
 * Fix – Load more functionality broken with recent WordPress release.
+* Fix – minor phpcs warnings.
