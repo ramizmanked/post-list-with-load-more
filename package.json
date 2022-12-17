@@ -1,0 +1,9 @@
+{
+	"name": "post-list-with-load-more",
+	"version": "1.0.0",
+	"description": "Post List with Load More",
+	"author": "Ramiz Manked",
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^13.7.0"
+	}
+}

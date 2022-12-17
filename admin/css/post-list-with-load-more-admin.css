@@ -1,0 +1,50 @@
+#post-list-settings .form-table th,
+#post-list-settings .form-table td {
+	padding: 0;
+}
+
+#post-list-settings .form-table tbody {
+	display: flex;
+	flex-direction: column;
+}
+
+#post-list-settings .form-table tbody tr {
+	padding: 10px 0;
+}
+
+#post-list-settings .form-table tbody td > label:not(:last-child) {
+	margin-right: 20px;
+}
+
+#post-list-settings input[type="text"],
+#post-list-settings input[type="number"],
+#post-list-settings textarea,
+#post-list-settings select {
+	width: 250px;
+}
+
+.shortcode-form label {
+	font-weight: 700;
+	width: 120px;
+	display: inline-block;
+}
+
+.shortcode-form .input-control {
+	margin-bottom: 20px;
+}
+
+.shortcode-info {
+	border-left: 3px solid #00a0d2;
+	padding: 10px 0 10px 15px;
+	background-color: #fff;
+}
+
+#post-list-settings .form-table th {
+	width: 120px;
+	font-size: 13px;
+	color: #444;
+}
+
+.shortcode-form .input-control.tags-control {
+	display: none;
+}
