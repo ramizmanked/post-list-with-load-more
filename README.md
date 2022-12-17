@@ -1,10 +1,9 @@
 # Post List with Read More
 A simplified solution to your posts listing requirements.
 
-## Description
 This plugin allows you to display the list of posts anywhere on your site.
 
-Load More feature retrieves posts without reloading the page to ensure seamless reading experience for end users.
+Load More feature retrieves posts without reloading the page to ensure seamless user experience.
 
 ## Features
 1. Nicely tabbed and dedicated plugin settings page.
@@ -36,17 +35,17 @@ In order to get ready with your posts list, all you need to do is:
 1. Install & activate the plugin as per described in Installation section below.
 1. Go to plugin setting page via Dashboard > Settings > Post List with Load More.
 1. Go to 'Settings' tab in order for plugin settings.
-   1.1 Tick your preferred layout style (Default: List).
-   1.2 Tick when more posts should be loaded after initial post list finished loading (Default: On Button Click).
+   - Tick your preferred layout style (Default: List).
+   - Tick when more posts should be loaded after initial post list finished loading (Default: On Button Click).
 1. Go to 'Generate Shortcode' tab in order to generate a shortcode dynamically.
-   1.1 Select the Post Type you wish to list posts for.
-   1.2 Select Category Type for Post Type selected in previous step.
-   1.3 Select one more categories to filter the posts by. (Note: Hold down the Ctrl (windows) / Command (Mac) button and click to select multiple options.)
-   1.4 If your post has tags, select one more tags to filter the posts by. (Note: Hold down the Ctrl (windows) / Command (Mac) button and click to select multiple options.)
-   1.5 Enter the number of posts to display in each pagination.
-   1.6 Select the field if you wish to reorder your posts by.
-   1.7 Select the order of Order By field.
-   1.8 That's it! You should have your shortcode ready to use below form.
+   - Select the Post Type you wish to list posts for.
+   *. Select Category Type for Post Type selected in previous step.
+   - Select one more categories to filter the posts by. (Note: Hold down the Ctrl (windows) / Command (Mac) button and click to select multiple options.)
+   - If your post has tags, select one more tags to filter the posts by. (Note: Hold down the Ctrl (windows) / Command (Mac) button and click to select multiple options.)
+   - Enter the number of posts to display in each pagination.
+   - Select the field if you wish to reorder your posts by.
+   - Select the order of Order By field.
+   - That's it! You should have your shortcode ready to use below form.
 
 ## Frequently Asked Questions
 
