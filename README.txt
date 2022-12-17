@@ -6,7 +6,7 @@ Tags:              post list with load more, lazy loading posts, ajax posts, pos
 Requires at least: 4.5.0
 Tested up to:      6.1.1
 Requires PHP:      8.0
-License:           GPLv2 or later
+License:           GPLv3
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
 A simplified solution to your posts listing requirements.
