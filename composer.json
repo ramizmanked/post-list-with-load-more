@@ -1,0 +1,15 @@
+{
+    "name": "ramizmanked/post-list-with-load-more",
+    "authors": [
+        {
+            "name": "Ramiz Manked",
+            "email": "ramiz.manked@gmail.com"
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Post_List_With_Load_More\\": "classes/"
+        }
+    }
+}

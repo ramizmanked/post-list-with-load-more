@@ -1,4 +1,8 @@
-// Plugin script for backend
+/**
+ * Plugin script for backend, mostly handles shortcode generator via plugin settings.
+ *
+ * @param {Object} $ jQuery object.
+ */
 (function ($) {
 	'use strict';
 

@@ -1,7 +1,11 @@
+/.github
 /.wordpress-org
 /.git
-/.github
 /node_modules
+/vendor
 
 .distignore
 .gitignore
+.gitattributes
+composer.lock
+package-lock.json

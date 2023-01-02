@@ -2,8 +2,8 @@
 
 Contributors:      ramizmanked
 Donate link:       https://paypal.me/ramizmanked
-Tags:              post list with load more, lazy loading posts, ajax posts, posts with load more, load more posts, infinite posts, post list, post with read more
-Requires at least: 4.5.0
+Tags:              post list with load more, lazy loading posts, ajax posts, list block, post list block, load more posts, infinite posts, post list, post with read more
+Requires at least: 6.1.0
 Tested up to:      6.1.1
 Requires PHP:      8.0
 License:           GPLv3
@@ -83,22 +83,34 @@ You can always add snippet like `<?php echo do_shortcode('[post_list_with_load_m
 
 == Changelog ==
 
-= 1.0.0 - December 04, 2019 =
-* Initial release
+= 2.0.0 - January 01, 2023 =
+* Added block support.
+* Restructured code and use of composer for developers' ease.
+* Updated assets with consistent design.
 
-= 1.0.1 - December 04, 2019 =
-* Follow standard naming conventions.
-
-= 1.0.2 - June 02, 2020 =
-* Add multilingual support.
-
-= 1.0.3 - June 03, 2020 =
-* Translation support for ‘Load More’ button added.
+= 1.0.5 - December 16, 2022 =
+* Fix – Load more functionality broken with recent WordPress release.
+* Fix – minor phpcs warnings.
 
 = 1.0.4 - April 19, 2021 =
 * Fix – Empty post listing if no categories selected.
 * Fix – Empty space before ending shortcode.
 
-= 1.0.5 - December 16, 2022 =
-* Fix – Load more functionality broken with recent WordPress release.
-* Fix – minor phpcs warnings.
+= 1.0.3 - June 03, 2020 =
+* Translation support for ‘Load More’ button added.
+
+= 1.0.2 - June 02, 2020 =
+* Add multilingual support.
+
+= 1.0.1 - December 04, 2019 =
+* Follow standard naming conventions.
+
+= 1.0.0 - December 04, 2019 =
+* Initial release
+
+== Upgrade Notice ==
+
+= 2.0.0 - January 01, 2023 =
+* Added block support.
+* Restructured code and use of composer for developers' ease.
+* Updated assets with consistent design.
