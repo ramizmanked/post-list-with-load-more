@@ -1,9 +1,20 @@
 {
 	"name": "post-list-with-load-more",
 	"version": "1.0.0",
-	"description": "Post List with Load More",
+	"description": "Display the list of posts anywhere on your site.",
 	"author": "Ramiz Manked",
 	"devDependencies": {
-		"@wordpress/eslint-plugin": "^13.7.0"
+		"@wordpress/eslint-plugin": "^13.7.0",
+		"@wordpress/scripts": "^25.0.0"
+	},
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
 	}
 }

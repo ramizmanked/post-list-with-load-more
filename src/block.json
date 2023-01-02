@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ramizmanked/post-list-with-load-more",
+	"version": "1.0.0",
+	"title": "Post List with Load More",
+	"category": "text",
+	"icon": "feedback",
+	"description": "Display the list of posts anywhere on your site.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"postType": {
+			"type": "string",
+			"default": ""
+		},
+		"taxonomy": {
+			"type": "string",
+			"default": ""
+		},
+		"term": {
+			"type": "string",
+			"default": ""
+		},
+		"postsPerPage": {
+			"type": "string",
+			"default": "6"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "title"
+		},
+		"order": {
+			"type": "string",
+			"default": "asc"
+		},
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		},
+		"gridColumns": {
+			"type": "string",
+			"default": "3"
+		},
+		"listLayout": {
+			"type": "string",
+			"default": "sideBySide"
+		},
+		"morePosts": {
+			"type": "string",
+			"default": "click"
+		}
+	},
+	"textdomain": "post-list-with-load-more",
+	"editorScript": "file:./index.js",
+	"script": "post-list-with-load-more-script",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

@@ -1,6 +1,6 @@
-/.wordpress-org
 /.git
 /.github
+/.wordpress-org
 /node_modules
 /bin
 /tests
@@ -8,6 +8,7 @@
 .editorconfig
 .distignore
 .eslintrc
+.gitattributes
 .gitignore
 .travis.yml
 CODEOWNERS
@@ -15,4 +16,3 @@ composer.json
 composer.lock
 composer-lock.json
 phpunit.xml.dist
-README.md
