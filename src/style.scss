@@ -1,0 +1,36 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-ramizmanked-post-list-with-load-more {
+	.custom-post-list {
+		display: grid;
+		gap: 1.5rem;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			aspect-ratio: 16/9;
+		}
+	}
+	.custom-post-form {
+		margin: 2rem auto;
+	}
+	&.list-layout-sideBySide {
+		.custom-post {
+			display: grid;
+			grid-template-columns: 35% 65%;
+			gap: 1.5rem;
+		}
+	}
+	&.more-on-scroll {
+		.custom-post-form {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+
+}
