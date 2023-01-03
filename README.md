@@ -1,51 +1,37 @@
 # Post List with Read More
-A simplified solution to your posts listing requirements.
 
-This plugin allows you to display the list of posts anywhere on your site.
+Simple yet powerful WordPress plugin that allows you to display built-in/custom posts and pages anywhere on your website.
 
-Load More feature retrieves posts without reloading the page to ensure seamless user experience.
+Loading more posts is made asynchronous (using AJAX) to ensure seamless user experience.
 
-## Features
-1. Nicely tabbed and dedicated plugin settings page.
-1. Ability to choose your preferred layout style whether it could be a List or Grid.
-1. Ability to choose when more posts should be loaded after initial post list finished loading whether it could be a 'On Scroll' or 'On Button Click'.
-1. Ability to generate a dynamic shortcode depending on your requirement.
+The plugin is shipped with two basic layouts: Grid and List.
+
+For ease and simplicity layouts styles are kept basic, so it should reflect whatever styles provided by your active theme and you don't have to overwrite styles for each and every element of the layout.
+
+## Top Features
+1. Asynchronous pagination to ensure unwanted reloading and best reading experience.
+1. Comes with flexible custom block with a bunch of settings.
+1. Pre-built layouts for getting started easily.
+1. Option to load more posts 'On Scroll' or 'On Button Click'.
+1. Dynamic shortcode generator so you don't have to remember different shortcode parameters.
 
 ## Installation
 
-### Install Post List with Load More from within WordPress
-
-1. Visit the plugins page within your dashboard and select 'Add New';
-1. Search for 'Post List with Read More';
-1. Activate Post List with Load More from your Plugins page;
-1. You should see 'Post List with Load More' option under Settings;
-1. You're done!
-
-### Install Post List with Load More manually
-
-1. Upload the 'Post List with Load More' folder to the /wp-content/plugins/ directory;
-1. Activate the Post List with Load More plugin through the 'Plugins' menu in WordPress;
-1. You should see 'Post List with Load More' option under Settings;
-1. You're done!
+1. Go to Dashboard > Plugins > Add New.
+1. Search for 'Post List with Load More' in Search plugins... textbox and hit Enter.
+1. Install & Active the 'Post List with Load More' plugin.
 
 ## Usage
 
-In order to get ready with your posts list, all you need to do is:
-
-1. Install & activate the plugin as per described in Installation section below.
-1. Go to plugin setting page via Dashboard > Settings > Post List with Load More.
-1. Go to 'Settings' tab in order for plugin settings.
-   - Tick your preferred layout style (Default: List).
-   - Tick when more posts should be loaded after initial post list finished loading (Default: On Button Click).
-1. Go to 'Generate Shortcode' tab in order to generate a shortcode dynamically.
-   - Select the Post Type you wish to list posts for.
-   *. Select Category Type for Post Type selected in previous step.
-   - Select one more categories to filter the posts by. (Note: Hold down the Ctrl (windows) / Command (Mac) button and click to select multiple options.)
-   - If your post has tags, select one more tags to filter the posts by. (Note: Hold down the Ctrl (windows) / Command (Mac) button and click to select multiple options.)
-   - Enter the number of posts to display in each pagination.
-   - Select the field if you wish to reorder your posts by.
-   - Select the order of Order By field.
-   - That's it! You should have your shortcode ready to use below form.
+There are a couple of ways you can display posts:
+1. **Custom Block** - If your website is running on recent WordPress version and is using Block Editor for content editing then using Block is the easiest way to display posts. I hope you would love intuitive block settings which should show live preview of the changes you make.
+   * Go to Dashboard > Edit post/page > Click 'Block Inserter' from top-left corner > Search or Select 'Post List with Load More'.
+   * Try changing block settings per your need and you're done.
+1. **Shortcode** - If your website is running on older WordPress version (i.e. before v5) then you can still make most out of the plugin through Shortcode. You can generate shortcode dynamically by changing several fields depending on your needs via plugin settings page.
+   * Go to Dashboard > Settings > Post List with Load More.
+   * 'Settings' tab will let you choose Layout Style and Load More posts option.
+   * 'Generate Shortcode' by changing fields depending on your requirement and copy the generated shortcode.
+   * Go to Dashboard > Edit post/page > Click 'Block Inserter' from top-left corner > Search or Select 'Shortcode' block and paste the copied shortcode.
 
 ## Frequently Asked Questions
 
@@ -58,3 +44,20 @@ Yes. Absolutely! You can use custom taxonomies registered with your WordPress in
 ### What if I wish to use shortcode in file?
 You can always add snippet like `<?php echo do_shortcode('[post_list_with_load_more]'); ?>` in your code in order to render post list from your code.
 
+## How to contribute?
+
+Contributions or Suggestions are most welcome. I would really appreciate even minor contribution to the plugin or documentation.
+
+### Development environment recommendations
+1. Latest version of WordPress
+2. Node v16
+3. Composer v2+
+4. WordPress coding standard
+
+### Steps to follow
+1. Create a new branch from `main`.
+2. Clone the repository into your local and checkout to your branch.
+3. Run ``npm start`` to start development environment.
+4. Once you're done with code updates and testing, run ``npm run build`` to make assets ready to go into production environment.
+5. Commit, push and publish your local branch.
+6. Create a 'Pull Request' from your branch to merge your code into `main`.

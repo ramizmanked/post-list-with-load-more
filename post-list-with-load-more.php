@@ -3,7 +3,7 @@
  * Plugin Name:       Post List with Load More
  * Plugin URI:        https://wordpress.org/plugins/post-list-with-load-more
  * Description:       A simplified solution to your posts listing needs. This plugin lets you display the posts list anywhere on your site.
- * Version:           2.0.0
+ * Version:           2.0.1
  * Author:            Ramiz Manked
  * Author URI:        https://ramizmanked.com
  * License:           GPLv3
