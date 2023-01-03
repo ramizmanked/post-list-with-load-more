@@ -339,7 +339,7 @@ class Settings {
 			POST_LIST_WITH_LOAD_MORE_VERSION
 		);
 		wp_localize_script(
-			POST_LIST_WITH_LOAD_MORE_PLUGIN_SHARED_SCRIPT_HANDLE,
+			POST_LIST_WITH_LOAD_MORE_PLUGIN_ADMIN_SCRIPT_HANDLE,
 			'postListAjax',
 			[
 				'ajaxurl' => admin_url( 'admin-ajax.php' ),
